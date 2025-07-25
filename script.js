@@ -1,3 +1,4 @@
+// Developer: abubekr
 const wordList = [
   {
     word: "apple",
