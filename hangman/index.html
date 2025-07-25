@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hangman Game</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="game-container">
+    <h1>Hangman Game</h1>
+    <div id="word"></div>
+
+    <!-- Replace input block with this -->
+<div class="input-group">
+  <input type="text" id="letter-input" maxlength="1" placeholder="A-Z" />
+  <button onclick="guessLetter()">Guess</button>
+</div>
+
+
+    <div class="wrong-guesses">
+      <p>Wrong guesses:</p>
+      <span id="wrong-letters"></span>
+    </div>
+
+    <p id="attempts">🕒 Attempts Left: 6</p>
+
+    <p id="hint">💡 You have 3 hints.</p>
+    <p id="icon"></p>
+    <button id="hint-btn" onclick="showHint()">Use Hint</button>
+
+    <p id="reveal-msg"></p>
+    <button id="reveal-btn" onclick="revealOneLetter()">Reveal a Letter</button>
+
+    <p id="message"></p>
+    <button onclick="resetGame()">Restart</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
